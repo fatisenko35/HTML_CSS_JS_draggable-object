@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: #9C51E0;
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+      }
+      .mydiv {
+        width: 30rem;
+        height: 20rem;
+        margin: auto;
+        border: 1px solid black;
+        padding: 2rem;
+        background-image: url(./img/4.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 20px;
+        /* position: relative; */
+
+      }
+      .imgs {
+        width: 70rem;
+
+        margin: auto;
+        margin-top: 3rem;
+        display: flex;
+        justify-content: space-evenly;
+      }
+      .img {
+        width: 10rem;
+      }
+      #inputtext {
+        width: 15rem;
+        height: 1.5rem;
+        border: none;
+        border-radius: 10px;
+      }
+      .mydiv-div {
+        font-size: 2rem;
+        position:sticky;
+        width: 10rem;
+        height: 5rem;
+        text-shadow: 2px 2px 5px red;
+        cursor: move;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="mydiv">
+        <div class="mydiv-div">Your Text</div>
+      </div>
+      <div class="input">
+        <input type="text" name="inputtext" id="inputtext" />
+        <input type="color" id="favcolor" name="favcolor" value="#ff0000" />
+      </div>
+    </div>
+
+    <div class="imgs">
+      <img src="./img/1.png" alt="" class="img" />
+      <img src="./img/2.png" alt="" class="img" />
+      <img src="./img/3.png" alt="" class="img" />
+      <img src="./img/4.png" alt="" class="img" />
+      <img src="./img/5.png" alt="" class="img" />
+    </div>
+    <script src="./script/app.js"></script>
+  </body>
+</html>
