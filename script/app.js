@@ -25,7 +25,7 @@ window.addEventListener("load", (event) => {
   });
 });
 
-/////////////Drag eventlerinin tanımlandığı kod bloğu aşağıdadır.
+/////////////Draggable eventlerinin tanımlandığı kod bloğu aşağıdadır.
 
 dragFonksiyon(document.querySelector(".mydiv-div"));
 
@@ -62,4 +62,4 @@ function dragFonksiyon(element) {
     document.onmouseup = null;
     document.onmousemove = null;
   }
-}
+};
