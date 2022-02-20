@@ -3,12 +3,12 @@
 const images = document.querySelectorAll(".img");
 const mydiv = document.querySelector(".mydiv");
 
-for (let i = 0; i < images.length; i++) {
-  images[i].addEventListener("click", (e) => {
-    console.log(e.target.src);
-    mydiv.style.backgroundImage = `url(${images[i].src})`;
-  });
-}
+// for (let i = 0; i < images.length; i++) {
+//   images[i].addEventListener("click", (e) => {
+//     console.log(e.target.src);
+//     mydiv.style.backgroundImage = `url(${images[i].src})`;
+//   });
+// }
 
 // input değerlerini "Your Text" görünmesi için kod bloğu aşağıdadır.
 
@@ -24,6 +24,16 @@ window.addEventListener("load", (event) => {
     mydivText.style.color = e.target.value;
   });
 });
+
+/////// Map ile mouseover tanımlama işlemi
+const mapAttribute = document.querySelector("#map");
+console.log(mapAttribute);
+for (let i = 0; i < images.length; i++) {
+  images[i].addEventListener("mouseover", () => {
+    console.log(images[i].src);
+    mapAttribute.src = images[i].src;
+  });
+}
 
 /////////////Draggable eventlerinin tanımlandığı kod bloğu aşağıdadır.
 

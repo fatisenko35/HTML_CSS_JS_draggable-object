@@ -50,17 +50,26 @@
       }
       .mydiv-div {
         font-size: 2rem;
-        position:sticky;
+        position:absolute;
         width: 10rem;
         height: 5rem;
         text-shadow: 2px 2px 5px red;
         cursor: move;
+      }
+      .mydiv img{
+        width: 100%;
+        height: 100%;
+        z-index: -1;
       }
     </style>
   </head>
   <body>
     <div class="container">
       <div class="mydiv">
+        <img src="./img/1.jpg" alt="" class="img" id="map" usemap="#img1"/>
+      <map name="img1" id="map">
+        <area shape="rect" coords="253,483,410,657" href="" alt="">
+      </map>
         <div class="mydiv-div">Your Text</div>
       </div>
       <div class="input">
@@ -70,11 +79,26 @@
     </div>
 
     <div class="imgs">
-      <img src="./img/1.jpg" alt="" class="img" />
-      <img src="./img/2.jpg" alt="" class="img" />
-      <img src="./img/3.jpg" alt="" class="img" />
-      <img src="./img/4.jpg" alt="" class="img" />
-      <img src="./img/5.jpg" alt="" class="img" />
+      <img src="./img/1.jpg" alt="" class="img" usemap="#img1" />
+      <map name="img1">
+        <area shape="rect" coords="253,483,410,657" href="" alt="">
+      </map>
+      <img src="./img/2.jpg" alt="" class="img" usemap="#img2" />
+      <map name="img2">
+        <area shape="rect" coords="467,485,624,659" href="" alt="">
+      </map>
+      <img src="./img/3.jpg" alt="" class="img" usemap="#img3" />
+      <map name="img3">
+        <area shape="rect" coords="681,484,840,659" href="" alt="">
+      </map>
+      <img src="./img/4.jpg" alt="" class="img" usemap="img4"/>
+      <map name="img4">
+        <area shape="rect" coords="893,483,1052,659" href="" alt="">
+      </map>
+      <img src="./img/5.jpg" alt="" class="img" usemap="img5"/>
+      <map name="img5">
+        <area shape="rect" coords="1107,483,1052,659" href="" alt="">
+      </map>
     </div>
     <script src="./script/app.js"></script>
   </body>
